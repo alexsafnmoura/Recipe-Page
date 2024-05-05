@@ -45,6 +45,7 @@ h1, h2{
     font-size: var(--fs-heading);
     font-weight: var(--fw-400);
     color: var(--primary-Nutmeg);
+    margin-bottom: 0.7rem;
 }
 
 ul, ol{
@@ -67,8 +68,101 @@ body{
    background-color: var(--neutral-Eggshell);
 }
 
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
 .recipe-title{
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     color: var(--neutral-Dark-Charcoal);
 }
 
+.prep-title{
+    font-size: 1.2rem;
+    font-weight: var(--fw-600);
+    color: var(--primary-Dark-Raspberry);
+    margin-bottom: 0.5rem;
+}
+
+span{
+    font-weight: 700;
+}
+
+[data-cell="nutrient-value"]{
+   color: var(--primary-Nutmeg);
+   font-weight: var(--fw-600);
+}
+
+li{
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+li::marker{
+    color: var(--primary-Nutmeg);
+    font-weight: var(--fw-600);
+}
+
+/* layout */
+.container{
+    display: grid;
+    place-items: center;
+}
+.recipe-container{
+    max-width: 45em;
+    background-color: var(--neutral-White);
+    margin: 6rem 0;
+    padding: 1.7rem;
+    border-radius: 1.5rem;
+}
+
+.recipe-img{
+    border-radius: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+section{
+    margin-top: 1rem;
+}
+
+hr{
+    outline: none;
+    border: none;
+    height: 1px;
+    background: var(--neutral-Light-Grey);
+    margin-top: 2rem;
+}
+
+.prep-time{
+    background: var(--neutral-Rose-White);
+    padding:1.8rem;
+    border-radius: 0.8rem;
+    margin-top: 2rem;
+}
+
+tr {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 1rem;
+    border-bottom: 1px solid var(--neutral-Light-Grey);
+}
+
+@media (max-width 500px) {
+    .container{
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+    .recipe-img {
+        border-radius: 0;
+    }
+
+    .recipe-container{
+        padding: 0 1.75rem;
+    }
+
+    .recipe-title{
+        font-size: 2.5rem;
+    }
+}
+
+ 
