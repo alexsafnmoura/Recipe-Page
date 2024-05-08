@@ -8,7 +8,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://recipe-page-lime-tau.vercel.app/)
+- Live Site URL: [live site URL](https://recipe-page-lime-tau.vercel.app/)
 
 ### Built with
 
